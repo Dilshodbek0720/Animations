@@ -16,6 +16,12 @@ import 'example13.dart';
 import 'example14.dart';
 import 'example15.dart';
 import 'example16.dart';
+import 'example17.dart';
+import 'example18.dart';
+import 'example19.dart';
+import 'example20.dart';
+import 'example21.dart';
+import 'example22.dart';
 import 'example7.dart';
 import 'example8.dart';
 import 'example9.dart';
@@ -71,21 +77,21 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => ExampleFifteen());
       case sixteenScreenRoute:
         return MaterialPageRoute(builder: (_) => ExampleSixteen());
-      // case seventeenthScreenRoute:
-      //   return MaterialPageRoute(builder: (_) => ExampleSeventeen());
-      // case eighteenthScreenRoute:
-      //   return MaterialPageRoute(builder: (_) => ExampleEighteen());
-      // case nineteenthScreenRoute:
-      //   return MaterialPageRoute(builder: (_) => Example19());
-      // case twentyScreenRoute:
-      //   return MaterialPageRoute(builder: (_) => Example20());
-      // case twentyFirstScreenRoute:
-      //   return MaterialPageRoute(builder: (_) => Example21());
+      case seventeenthScreenRoute:
+        return MaterialPageRoute(builder: (_) => ExampleSeventeen());
+      case eighteenthScreenRoute:
+        return MaterialPageRoute(builder: (_) => ExampleEighteen());
+      case nineteenthScreenRoute:
+        return MaterialPageRoute(builder: (_) => Example19());
+      case twentyScreenRoute:
+        return MaterialPageRoute(builder: (_) => Example20());
+      case twentyFirstScreenRoute:
+        return MaterialPageRoute(builder: (_) => Example21());
       // case taskScreenRoute:
       //   return MaterialPageRoute(builder: (_) => TaskScreen());
       //
-      // case twentySecondScreenRoute:
-      //   return MaterialPageRoute(builder: (_) => Example22());
+      case twentySecondScreenRoute:
+        return MaterialPageRoute(builder: (_) => Example22());
 
       default:
         return MaterialPageRoute(

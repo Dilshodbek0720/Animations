@@ -35,12 +35,12 @@ class _HomeScreenState extends State<HomeScreen> {
     fourteenScreenRoute,
     fifteenScreenRoute,
     sixteenScreenRoute,
-    // seventeenthScreenRoute,
-    // eighteenthScreenRoute,
-    // nineteenthScreenRoute,
-    // twentyScreenRoute,
-    // twentyFirstScreenRoute,
-    // twentySecondScreenRoute
+    seventeenthScreenRoute,
+    eighteenthScreenRoute,
+    nineteenthScreenRoute,
+    twentyScreenRoute,
+    twentyFirstScreenRoute,
+    twentySecondScreenRoute
   ];
 
   @override

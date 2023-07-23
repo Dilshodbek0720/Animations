@@ -1,4 +1,5 @@
 const String homeRoute = '/';
+const String homeWorkScreen = "/home";
 const String homeScreenOne = '/home1';
 const String homeScreenTwo = '/home2';
 const String homeScreenThree = '/home3';

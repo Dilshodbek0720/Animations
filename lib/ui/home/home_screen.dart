@@ -11,11 +11,18 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   List<String> routeHome = [
-    homeWorkScreen,
     homeScreenOne,
     homeScreenTwo,
     homeScreenThree,
     homeScreenFour,
+    homeScreenFive,
+    homeScreenSix,
+    homeScreenSeven,
+    homeScreenEight,
+    homeScreenNine,
+    homeScreenTen,
+    homeScreenEleven,
+    homeWorkScreen,
   ];
 
   List<String> routeNames = [

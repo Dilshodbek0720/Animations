@@ -35,10 +35,10 @@ class _HomeState extends State<Home> with TickerProviderStateMixin {
     animationController.forward();
   }
 
-  fetchButton() {
+  fetchButton() async{
     animationController =
-        AnimationController(vsync: this, duration: Duration(seconds: 1));
-    sizeAnimation = Tween<double>(begin: 20, end: 40).animate(CurvedAnimation(
+        AnimationController(vsync: this, duration: Duration(milliseconds: 1500));
+    sizeAnimation = Tween<double>(begin: 25, end: 40).animate(CurvedAnimation(
       parent: animationController,
       curve: Curves.bounceIn,
       reverseCurve: Curves.bounceIn
@@ -47,12 +47,14 @@ class _HomeState extends State<Home> with TickerProviderStateMixin {
 
       });
     });
-    animationController.forward();
+    await animationController.forward();
+    animationController.reverse();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
       body: Container(
         width: double.infinity,
         height: double.infinity,
@@ -65,22 +67,34 @@ class _HomeState extends State<Home> with TickerProviderStateMixin {
               height: 320,
               child: Column(
                 children: [
-                  FlutterLogo(size: 100),
+                  Transform.rotate(
+                    angle: -animation.value,
+                      child: FlutterLogo(size: 100)
+                  ),
                   SizedBox(height: 10,),
                   Row(
                     children: [
-                      FlutterLogo(
-                        size: 100,
+                      Transform.rotate(
+                        angle: -animation.value,
+                        child: FlutterLogo(
+                          size: 100,
+                        ),
                       ),
                       Spacer(),
-                      FlutterLogo(
-                        size: 100,
+                      Transform.rotate(
+                        angle: -animation.value,
+                        child: FlutterLogo(
+                          size: 100,
+                        ),
                       ),
                     ],
                   ),
                   SizedBox(height: 10,),
-                  FlutterLogo(
-                    size: 100,
+                  Transform.rotate(
+                    angle: -animation.value,
+                    child: FlutterLogo(
+                      size: 100,
+                    ),
                   ),
                 ],
               ),

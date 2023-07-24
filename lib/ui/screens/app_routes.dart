@@ -1,6 +1,10 @@
 import 'package:animations/ui/homework/home_screen1.dart';
 import 'package:animations/ui/homework/home_screen10.dart';
 import 'package:animations/ui/homework/home_screen11.dart';
+import 'package:animations/ui/homework/home_screen13.dart';
+import 'package:animations/ui/homework/home_screen14.dart';
+import 'package:animations/ui/homework/home_screen15.dart';
+import 'package:animations/ui/homework/home_screen16.dart';
 import 'package:animations/ui/homework/home_screen2.dart';
 import 'package:animations/ui/homework/home_screen3.dart';
 import 'package:animations/ui/homework/home_screen4.dart';
@@ -16,6 +20,7 @@ import 'package:animations/ui/screens/example11.dart';
 import 'package:flutter/material.dart';
 
 import '../constants.dart';
+import '../homework/home_screen12.dart';
 import '../homework/homework.dart';
 import 'example10.dart';
 import 'example12.dart';
@@ -66,6 +71,16 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => HomeScreenTen());
       case homeScreenEleven:
         return MaterialPageRoute(builder: (_) => HomeScreen11());
+      case homeScreen12:
+        return MaterialPageRoute(builder: (_) => HomeScreen12());
+      case homeScreen13:
+        return MaterialPageRoute(builder: (_) => HomeScreen13());
+      case homeScreen14:
+        return MaterialPageRoute(builder: (_) => HomeScreen14());
+      case homeScreen15:
+        return MaterialPageRoute(builder: (_) => HomeScreen15());
+      case homeScreen16:
+        return MaterialPageRoute(builder: (_) => HomeScreen16());
       case firstScreenRoute:
         return MaterialPageRoute(builder: (_) => ExampleOne());
       case secondScreenRoute:

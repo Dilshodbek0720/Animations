@@ -22,6 +22,11 @@ class _HomeScreenState extends State<HomeScreen> {
     homeScreenNine,
     homeScreenTen,
     homeScreenEleven,
+    homeScreen12,
+    homeScreen13,
+    homeScreen14,
+    homeScreen15,
+    homeScreen16,
     homeWorkScreen,
   ];
 
